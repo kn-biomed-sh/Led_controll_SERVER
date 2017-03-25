@@ -1,3 +1,9 @@
 # Led_controlled_by_phone
 
-Application let user control led brightness by seekBar
+*** WiFi access point ***
+sudo /usr/sbin/hostapd /etc/hostapd/hostapd.conf
+
+*** Kompilacja ***
+cd Desktop/LedON
+gcc -o server LedON.c server.c -lwiringPi
+sudo ./server
